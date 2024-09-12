@@ -5,7 +5,7 @@ import commands from '../data/commands';
 function Home() {
 	return (
 		<div>
-			<h1>Welcome to CS2 Console Docs</h1>
+			<h1>Welcome to the unofficial console docs for cs2</h1>
 			<p>This site provides documentation for Counter-Strike 2 console commands.</p>
 			<h2>Categories</h2>
 			<ul>

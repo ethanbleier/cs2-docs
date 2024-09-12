@@ -19,6 +19,7 @@ function CategoryPage() {
 						<Link to={`/command/${encodeURIComponent(cmd.name)}`}>
 							{cmd.name}
 						</Link>
+						<p>{cmd.description}</p>
 					</li>
 				))}
 			</ul>
