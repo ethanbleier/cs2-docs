@@ -1,0 +1,23 @@
+CS2-DOCS/
+└── cs2-docs/
+    ├── public/
+    │   ├── index.html
+    │   ├── favicon.ico
+    │   └── manifest.json
+    ├── src/
+    │   ├── components/
+    │   │   ├── Header.js
+    │   │   ├── Sidebar.js
+    │   │   └── Footer.js
+    │   ├── pages/
+    │   │   ├── Home.js
+    │   │   ├── CategoryPage.js
+    │   │   └── CommandPage.js
+    │   ├── styles/
+    │   │   └── Documentation.css
+    │   ├── data/
+    │   │   └── commands.js
+    │   ├── App.js
+    │   └── index.js
+    ├── package.json
+    └── README.md
