@@ -6,15 +6,12 @@ import Footer from './components/Footer';
 import Home from './pages/Home';
 import CategoryPage from './pages/CategoryPage';
 import CommandPage from './pages/CommandPage';
-import { ThemeProvider, useTheme } from './contexts/ThemeContext';
 import './styles/Documentation.css';
 
-function AppContent() {
-	const { isDarkMode } = useTheme();
-
+function App() {
 	return (
-		<div className={`app ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
-			<Router>
+		<Router>
+			<div className="app">
 				<Header />
 				<div className="content">
 					<Sidebar />
@@ -27,16 +24,8 @@ function AppContent() {
 					</main>
 				</div>
 				<Footer />
-			</Router>
-		</div>
-	);
-}
-
-function App() {
-	return (
-		<ThemeProvider>
-			<AppContent />
-		</ThemeProvider>
+			</div>
+		</Router>
 	);
 }
 
