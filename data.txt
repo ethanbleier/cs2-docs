@@ -1,0 +1,172 @@
+sv_cheats 1 – allows you to enable cheat commands;
+sv_infinite_ammo 1 – infinite cartridges;
+noclip – the ability to fly. Usually this function is bound to a separate key. For example, "bind alt noclip";
+sv_grenade_trajectory_prac_pipreview 1 – shows the trajectory of the grenade after the throw and includes a separate camera with the landing site;
+sv_rethrow_last_grenade – automatically throws the last thrown grenade. We also recommend binding it to a separate key;
+sv_showimpacts 1 – shows bullet marks. So you can understand which walls are shot through and which are not;
+sv_showbullethits 1 – shows on the opponent's model the points where the bullets from the shots hit;
+mp_varmup_end – finishes the warm-up;
+mp_varmup_start – starts the warm-up;
+mp_varmup_pausetimer 1 – makes the warm-up timer infinite;
+mp_varmuptime 55555555 – changes the warm-up time;
+mp_freezetime 2 – reduces the duration of the freeze time to the set value, in this case up to two seconds;
+mp_restartgame 1 – restarts the server;
+mp_buy_anywhere 1 – allows you to buy everywhere;
+mp_maxmoney 14000 – sets the maximum possible amount of money. In this example – $14000;
+mp_startmoney 6000 – sets the amount of money at the beginning of the game. In this example – $6000;
+impulse 101 – adds the maximum amount of money to the balance;
+mp_roundtime 5 – specifies the length of the round (in minutes);
+mp_roundtime_defuse 0 – write this command so that the previous one works correctly;
+mp_maxrounds 155 – specifies the limit of rounds (the maximum possible number);
+mp_timelimit 45 – indicates the maximum match time (in minutes);
+mp_c4timer 45 – bomb trigger timer-C4;
+sv_visiblemaxplayers 25 – sets the maximum possible number of players on the map;
+sv_specnoclip 1 – allows viewers to fly through walls and objects on the map;
+sv_specspeed 1.5 – changes the speed in observer mode;
+cl_showpos 1 – shows coordinates.
+
+Commands for setting up the sight
+
+cl_crosshairstyle 0 – default sight (not working yet);
+cl_crosshairstyle 1 – default static sight (not working yet);
+cl_crosshairstyle 2 – classic sight;
+cl_crosshairstyle 3 - dynamic classic sight (not working yet);
+cl_crosshairstyle 4 - static classic sight;
+cl_crosshairstyle 5 – dynamic classic sight (with a smaller distance between the parts of the sight);
+sl_crosshair size (from 0 to 10, fractional values are allowed) – the size of the sight;
+sl_crosshair gap (from -5 to 5) – gap;
+cl_crosshairdot 0/1 – turn off or turn on the point;
+cl_crosshair_t 0/1 – turn off or turn on the T-shaped sight;
+cl_crosshairalpha (from 0 to 255) – transparency;
+cl_crosshairthickness (from 0 to 6) – thickness;
+cl_crosshair_drawoutline 0/ 1 – turn off or turn on the stroke;
+cl_crosshaircolor 0 – red;
+cl_crosshaircolor 1 – green;
+cl_crosshaircolor 2 – yellow;
+cl_crosshaircolor 3 – blue;
+sl_crosshaircolor 4 – turquoise;
+sl_crosshaircolor 5 – white;
+sl_crosshaircolor r (from 0 to 255) – the amount of red;
+sl_crosshaircolor g (from 0 to 255) – the amount of green;
+sl_crosshaircolor b (from 0 to 255) – the amount of blue;
+cl_crosshair_sniper_width (1 – default value) – the thickness of the crosshair in the sniper scope;
+cl_crosshairgap_useweaponvalue 1 – the gap in the dynamic scope varies depending on the weapon used
+Commands for configuring the radar
+
+cl_radar_always_centered 0/1 – does not center or center the radar on the player
+cl_radar_scale (from 0.25 to 1) – radar approximation;
+cl_radar_icon_scale_min (from 0.4 to 1.25) – the size of the player icons on the radar;
+cl_radar_rotate 0/1 – disables or enables radar rotation;
+cl_radar_square_with_scoreboard 0/1 – turns off or turns on the square radar when you click on the Tab.
+
+Commands for configuring bots
+
+bot_add_ct – add a bot for CT;
+bot_add_t – add a bot for T;
+bot_add – add a bot to one of the commands;
+bot_kick – kick bots;
+bot_dont_shoot 1 – bots don't shoot;
+mp_autoteambalance 0 – disabling auto-balance;
+bot_difficulty 0/1/2/3 - bot level;
+bot_add mimic 1 – the bot repeats all the movements of the player;
+bot_zombie 1 – bots don't move;
+bot_crouch 1 – bots are sitting.
+bot_place – puts the bot in the place where the sight is pointed.
+
+Commands to adjust the sound
+
+volume (from 0 to 1) – total volume;
+voice_modenable 0/1 – disables or enables voice chat;
+voice_always_sample_mic 0/1 – turns off or on the optimized microphone setup.
+
+Commands for adjusting the position of the hands
+
+viewmodel_presetpos 1 – the usual type of weapon in the hand;
+viewmodel_presetpos 2 – large type of weapon in hand;
+viewmodel_presetpos 3 – a classic type of weapon in hand;
+viewmodel_fov (from 54 to 68) – changes the viewing angle;
+
+Commands for issuing weapons, grenades and equipment
+
+give weapon_ak47 – command to issue AK-47 (works only with sv_cheats 1);
+give weapon_galilar – Galil;
+give weapon_sg556 -SG553;
+give weapon_m4a1 - M4A4;
+give weapon_m4a1_silencer - M4A1-S;
+give weapon_famas - Famas;
+give weapon_aug -Aug;
+give weapon_awp - AWP;
+give weapon_ssg08 - SSG 08;
+give weapon_scar20 - SCAR-20;
+give weapon_g3sg1 -G3SG1;
+give weapon_mp9 - MP9;
+give weapon_mp7 - MP7;
+give weapon_p90 - P90;
+give weapon_bizon - "Bison";
+give weapon_ump45 - UMP-45;
+give weapon_mac10 -MAC-10;
+give weapon_deagle - Digle;
+give weapon_elite - Dual Berettas;
+give weapon_glock - Glock-18;
+give weapon_usp_silencer - USP-S;
+give weapon_hkp2000 - P2000;
+give weapon_cz75a - CZ-75;
+give weapon_fiveseven - Five Seven;
+give weapon_tec9 - Tec-9;
+give weapon_m249 - M249;
+give weapon_negev - Negev;
+give weapon_mag7 -Mag-7;
+give weapon_nova -Nova;
+give weapon_sawedoff - Sawed-Off;
+give weapon_xm1014 - XM1014;
+give weapon_knife – knife;
+give weapon_smokegrenade - smoke;
+give weapon_flashbang - flash drive;
+give weapon_hegrenade – fragmentation grenade;
+give weapon_molotov - Molotov cocktail;
+give weapon_incgrenade – incendiary;
+give weapon_decoy – a false grenade;
+give weapon_c4 – bomb;
+give weapon_taser - Zeus x27;
+give item_defuser - minesweeper kit;
+give item_vesthelm - armor and helmet;
+give item_vest – armor.
+
+Commands for bannyhop (work only with sv_cheats 1)
+
+sv_enablebunnyhopping 1;
+sv_autobunnyhopping 1;
+sv_staminajumpcost 0;
+sv_staminalandcost 0;
+sv_airaccelerate 100;
+sv_maxspeed 10000.
+Other commands
+
+clear – clears the console;
+disconnect – disconnects from the server;
+quit – quit the game;
+status – shows data about the server;
+buddha 1 – the player loses damage up to 1 HP, but does not die;
+god 1 – immortality;
+binddefaults – all binds are rolled back to default;
+cl_draw_only_deathnotices 1 – disabling the hood, only the sight remains;
+cl_drawhud - completely disabling the hood;
+thirdperson – third-person view;
+firstperson – first person view;
+connect server ip address) – connect to the server if you have an ip;
+cl_showfps 1/2/3/4 – FPS display;
+fps_max (default value – 400) – enables FPS limitation;
+kill – kill yourself;
+map de_dust2 – loads the desired map;
+bind v noclip– binds the action. In this case, when you press v, noclip will turn on, when you press it again, it will turn off.
+unbind alt – removes the bind from a specific key;
+alias (hereinafter referred to as a command or several commands) – creates alternative versions of normal commands;
+sensitivity – mouse sensitivity;
+zoom_sensitivity_ratio – mouse sensitivity in zoom;
+exec (config name) – loads the config;
+cl_hud_color (from 0 to 11) – the color of the hood;
+callvote – start voting;
+cl_ent_hitbox – enables hitboxes;
+rate 1000000 (maximum value) – sets the speed limit of the Internet connection between the server and the player;
+record (title) – records a demo;
+demoui – turns off and turns on the demo playback
