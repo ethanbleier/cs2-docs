@@ -1,13 +1,15 @@
-body {
-	font-family: Arial, sans-serif;
+/* Basic styles */
+body,
+.app {
 	margin: 0;
 	padding: 0;
+	font-family: Arial, sans-serif;
+	min-height: 100vh;
 }
 
 .app {
 	display: flex;
 	flex-direction: column;
-	min-height: 100vh;
 }
 
 .content {
@@ -15,9 +17,74 @@ body {
 	flex: 1;
 }
 
+/* Light mode styles */
+.light-mode {
+	background-color: #ffffff;
+	color: #333333;
+}
+
+.light-mode a {
+	color: #0066cc;
+}
+
+.light-mode header {
+	background-color: #f0f0f0;
+	color: #333333;
+}
+
+.light-mode .sidebar {
+	background-color: #f8f8f8;
+}
+
+.light-mode footer {
+	background-color: #f0f0f0;
+	color: #333333;
+}
+
+/* Dark mode styles */
+.dark-mode {
+	background-color: #333333;
+	color: #ffffff;
+}
+
+.dark-mode a {
+	color: #61dafb;
+}
+
+.dark-mode header {
+	background-color: #222222;
+	color: #ffffff;
+}
+
+.dark-mode .sidebar {
+	background-color: #444444;
+}
+
+.dark-mode footer {
+	background-color: #222222;
+	color: #ffffff;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	padding: 10px;
+	background-color: #f0f0f0;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.dark-mode .theme-toggle {
+	background-color: #555555;
+	color: #ffffff;
+}
+
+/* Other existing styles... */
+
 header {
-	background-color: #333;
-	color: white;
 	padding: 1rem;
 }
 
@@ -31,11 +98,6 @@ header nav ul li {
 	margin-right: 1rem;
 }
 
-header nav ul li a {
-	color: white;
-	text-decoration: none;
-}
-
 main {
 	flex: 1;
 	padding: 1rem;
@@ -43,13 +105,129 @@ main {
 
 .sidebar {
 	width: 200px;
-	background-color: #f4f4f4;
 	padding: 1rem;
 }
 
 footer {
-	background-color: #333;
-	color: white;
 	text-align: center;
 	padding: 1rem;
+}
+
+.theme-toggle {
+	background: none;
+	font-size: 1.5rem;
+	color: #6c757d;
+	transition: all 0.2s ease-in-out;
+	cursor: pointer;
+}
+
+.theme-toggle:hover {
+	transform: scale(1.1);
+	/* box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2); */
+}
+
+.theme-toggle.dark {
+	background-color: #333;
+	color: #f4e04d;
+	/* Gold accent for dark mode */
+	border-color: #f4e04d;
+}
+
+.theme-toggle.light {
+	background-color: #f4e04d;
+	/* Gold for light mode */
+	color: #333;
+	border-color: #333;
+}
+
+.theme-toggle:active {
+	transform: scale(0.9);
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Header styles */
+header {
+	padding: 1rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header-content {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+}
+
+.logo {
+	font-size: 1.5rem;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+header nav ul {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+}
+
+header nav ul li {
+	margin-right: 1rem;
+}
+
+header nav ul li:last-child {
+	margin-right: 0;
+}
+
+/* Light mode header */
+.light-mode header {
+	background-color: #f0f0f0;
+	color: #333333;
+}
+
+.light-mode .logo {
+	color: #333333;
+}
+
+.light-mode header nav ul li a {
+	color: #333333;
+}
+
+/* Dark mode header */
+.dark-mode header {
+	background-color: #222222;
+	color: #ffffff;
+}
+
+.dark-mode .logo {
+	color: #ffffff;
+}
+
+.dark-mode header nav ul li a {
+	color: #ffffff;
+}
+
+/* Theme toggle button */
+.theme-toggle {
+	background: none;
+	border: none;
+	font-size: 1.5rem;
+	cursor: pointer;
+	padding: 0.5rem;
+}
+
+.light-mode .theme-toggle {
+	color: #333333;
+}
+
+.dark-mode .theme-toggle {
+	color: #ffffff;
+}
+
+button.link {
+	background: none;
+	border: none;
 }
