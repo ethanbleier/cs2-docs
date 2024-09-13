@@ -1,6 +1,7 @@
 ### CS2 Command docs!
 
-Try searching the internet for documentation on cs2 console commands
+Try searching the internet for documentation on cs2 console commands.
+
 Can you find a website that isn't
 
 - A steam community forum
