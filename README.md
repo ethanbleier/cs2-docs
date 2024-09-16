@@ -1,4 +1,4 @@
-### CS2 Command docs!
+### [CS2 Console Command Documentation!](https://cs2-docs.org)
 ---
 
 Try searching the internet for documentation on cs2 console commands.
