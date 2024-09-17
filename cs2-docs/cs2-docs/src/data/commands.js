@@ -1,5 +1,5 @@
 import general from './categories/general';
-import hudUI from './categories/hudUI';
+import hud from './categories/hud';
 import cheat from './categories/cheat';
 import weapon from './categories/weapon';
 import knife from './categories/knife';
@@ -11,7 +11,7 @@ import admin from './categories/admin';
 
 const commands = [
 	general,
-	hudUI,
+	hud,
 	cheat,
 	weapon,
 	knife,

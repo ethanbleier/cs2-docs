@@ -1,13 +1,15 @@
 import React from 'react';
-import { useTheme } from '../contexts/ThemeContext';
+import {useTheme} from '../contexts/ThemeContext';
+import '../styles/Documentation.css';
 
 function ThemeToggle() {
-	const { isDarkMode, toggleTheme } = useTheme();
+	const {isDarkMode, toggleTheme} = useTheme();
 
 	return (
-		<button onClick={toggleTheme} className="theme-toggle">
-			{isDarkMode ? '☀️' : '🌙'}
-		</button>
+		<label className="switch">
+			<input type="checkbox" checked={isDarkMode} onChange={toggleTheme} />
+			<span className="slider round"></span>
+		</label>
 	);
 }
 
