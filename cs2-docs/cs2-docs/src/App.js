@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
@@ -10,15 +10,23 @@ import { ThemeProvider, useTheme } from './contexts/ThemeContext';
 import './styles/Documentation.css';
 
 function AppContent() {
-	const { isDarkMode } = useTheme();
+	const {isDarkMode} = useTheme();
+	const [isSidebarCollapsed, setSidebarCollapsed] = useState(false);
+
+	const toggleSidebar = () => {
+		setSidebarCollapsed(!isSidebarCollapsed);
+	};
 
 	return (
 		<div className={`app ${isDarkMode ? 'dark-mode' : 'light-mode'}`}>
 			<Router>
 				<Header />
 				<div className="content">
-					<Sidebar />
-					<main>
+					<Sidebar 
+						isCollapsed={isSidebarCollapsed} 
+						toggleSidebar={toggleSidebar}
+					/>
+					<main className={isSidebarCollapsed ? 'sidebar-collapsed' : ''}>
 						<Routes>
 							<Route path="/" element={<Home />} />
 							<Route path="/category/:categoryName" element={<CategoryPage />} />

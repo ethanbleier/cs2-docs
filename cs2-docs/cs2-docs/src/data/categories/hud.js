@@ -1,5 +1,5 @@
-const hudUI = {
-	category: "HUD/UI",
+const hud = {
+	category: "hud",
 	commands: [
 		{ name: "cl_draw_only_deathnotices 1", description: "Disabling the HUD, only the sight remains" },
 		{ name: "cl_drawhud 0", description: "Completely disabling the HUD" },
@@ -14,4 +14,4 @@ const hudUI = {
 	]
 };
 
-export default hudUI;
+export default hud;
