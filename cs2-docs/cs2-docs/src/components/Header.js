@@ -4,15 +4,15 @@ import ThemeToggle from './ThemeToggle';
 
 function Header() {
 	return (
-		<header>
-			<div className="header-content">
+		<header className="header">
+			<div className="flex-container">
 				<h3 className="logo">
 					<Link to="/" style={{ color: 'inherit', textDecoration: 'none', fontSize: '1.5rem' }}>
 						Unofficial CS2 Console Documentation
 					</Link>
 				</h3>
-				<button className="about-button">About</button>
-				<div className="theme-toggle-container">
+				<div className="header-right">
+					<button className="about-button">About</button>
 					<ThemeToggle />
 				</div>
 			</div>

@@ -11,16 +11,15 @@ function Home() {
 				className="cs2-logo"
 			/>
 			<div className="home-content">
-				<h1>Welcome to the unofficial CS2 console docs</h1>
-				<p>We provide clean documentation for Counter-Strike 2 console commands</p>
+				<h3>CS2 console command docs page</h3>
+				<p>
+					Welcome! This is the unofficial documentation for Counter-Strike
+					2 console commands accessible to players. We hope you enjoy the
+					simplicity.
+				</p>
 			</div>
 		</div>
 	);
 }
 
 export default Home;
-
-/*
-Welcome to the Unofficial documentation for Counter-Strike 2
-We provide clean documentation for Counter-Strike 2 console commands
-*/

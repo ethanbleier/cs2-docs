@@ -1,0 +1,27 @@
+@import 'base.css';
+@import 'layout.css';
+@import 'home.css';
+@import 'theme-toggle.css';
+@import 'breadcrumb.css';
+@import 'sidebar.css';
+@import 'responsive.css';
+
+body, html {
+	width: 100%;
+	max-width: 100%;
+	overflow-x: hidden;
+	font-size: 1rem; /* 16px */
+}
+
+.app {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+.content {
+	display: flex;
+	flex: 1;
+}

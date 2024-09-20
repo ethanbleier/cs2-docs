@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 function Sidebar({isCollapsed, toggleSidebar}) {
 	return (
 		<>
-
 			<div className={`sidebar ${isCollapsed ? 'collapsed' : ''}`}>
 				{!isCollapsed && (
 					<>

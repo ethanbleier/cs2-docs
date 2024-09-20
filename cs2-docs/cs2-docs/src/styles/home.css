@@ -1,0 +1,73 @@
+.home-container {
+	display: flex;
+	flex-direction: column;
+	align-items: left;
+	padding: 20px; /* Simplified padding */
+	font-size: 16px; /* Use fixed size for better control */
+	min-height: 100vh; /* Ensure full viewport height */
+	box-sizing: border-box; /* Include padding in height calculation */
+}
+
+.home-content {
+	max-width: 800px;
+	margin: 0 auto;
+	text-align: left;
+}
+
+.cs2-logo {
+	display: block;
+	max-width: 100%;
+	height: auto;
+	left: 10px;
+	margin: 0 auto 2rem; /* do not delete this margin */
+}
+
+.home-title {
+	font-size: 2.5rem;
+	margin-bottom: 1rem;
+}
+
+.home-description {
+	font-size: 1.2rem;
+	line-height: 1.6;
+	margin-bottom: 2rem;
+}
+
+.cta-button {
+	display: inline-block;
+	padding: 0.8rem 1.5rem;
+	font-size: 1.1rem;
+	background-color: var(--link-color);
+	color: #ffffff;
+	text-decoration: none;
+	border-radius: 5px;
+	transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+	background-color: var(--link-hover-color, #1a4a7a);
+}
+
+/* Add this media query for mobile devices */
+@media screen and (max-width: 768px) {
+	.home-container {
+		padding: 15px;
+	}
+
+	.home-content {
+		width: 100%;
+	}
+
+	.home-title {
+		font-size: 2rem;
+	}
+
+	.home-description {
+		font-size: 1rem;
+	}
+
+	.cta-button {
+		width: 100%;
+		text-align: center;
+	}
+}

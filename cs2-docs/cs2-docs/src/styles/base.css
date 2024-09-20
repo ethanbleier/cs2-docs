@@ -1,0 +1,33 @@
+/* Global Styles */
+body,
+.app {
+	margin: 0;
+	padding: 0;
+	font-family: Arial;
+	min-height: 100vh;
+	background-color: var(--bg-color);
+	color: var(--text-color);
+}
+
+/* Theme Variables */
+.light-mode {
+	--bg-color: #FFFFFF;
+	--text-color: #000000;
+	--header-bg: #E0E0E0;
+	--link-color: #0000FF;
+	--sidebar-bg: #ECECEC;
+	--footer-bg: #E0E0E0;
+}
+
+.dark-mode {
+	--bg-color: #2C2A25;
+	--text-color: #E6E6E6;
+	--header-bg: #1E1C18;
+	--link-color: #4A90E2;
+	--sidebar-bg: #242220;
+	--footer-bg: #1E1C18;
+}
+
+a {
+	color: var(--link-color);
+}

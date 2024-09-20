@@ -29,8 +29,18 @@ function CommandPage() {
 	return (
 		<div>
 			{/* Breadcrumb Component */}
-			<nav>
-				<Link to="/">Home</Link> &gt; <Link to={`/category/${category.toLowerCase()}`}>{category}</Link> &gt; {command.name}
+			<nav style={{
+				marginBottom: '20px',
+				fontFamily: "'Arial', sans-serif",
+				fontSize: '14px',
+				paddingLeft: '20px', 
+				paddingTop: '20px'
+			}}>
+				<Link to="/">Home</Link>
+				<span style={{ margin: '0 8px' }}>&gt;</span>
+				<Link to={`/category/${category.toLowerCase()}`}>{category}</Link>
+				<span style={{ margin: '0 8px' }}>&gt;</span>
+				<span>{command.name}</span>
 			</nav>
 			<h1>
 				<span
