@@ -1,0 +1,21 @@
+@media (min-width: 768px) {
+	.home-container {
+		flex-direction: row;
+		align-items: left;
+		justify-content: left;
+		width: 80%;
+		margin: auto;
+		overflow: hidden;
+		padding: 40px;
+	}
+
+	.cs2-logo {
+		margin-right: 100px;
+		margin-bottom: 0;
+		align-items: left;
+		width: 50%;
+		height: 25%;
+		max-width: 50%;
+		max-height: 50%;
+	}
+}

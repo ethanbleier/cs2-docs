@@ -7,10 +7,10 @@ import Home from './pages/Home';
 import CategoryPage from './pages/CategoryPage';
 import CommandPage from './pages/CommandPage';
 import { ThemeProvider, useTheme } from './contexts/ThemeContext';
-import './styles/Documentation.css';
+import './styles/main.css';
 
 function AppContent() {
-	const {isDarkMode} = useTheme();
+	const { isDarkMode } = useTheme();
 	const [isSidebarCollapsed, setSidebarCollapsed] = useState(false);
 
 	const toggleSidebar = () => {
