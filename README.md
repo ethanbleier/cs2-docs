@@ -8,7 +8,6 @@ Can you find a website that isn't
 - A steam community forum
 - Littered with abstructive ads
 - oversaturated with animations
-- post-00 cringe web dev slop?
 
 --- 
 
